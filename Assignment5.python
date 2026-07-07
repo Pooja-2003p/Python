@@ -1,0 +1,30 @@
+#part-1 Create student class 
+class student:
+    def __init__(self, name, grade_level, score):
+        self.name = name
+        self. grade_level = grade_level
+        self.score = score
+#part-3
+    def introduce(self):
+        print(f"Hi, My name is {self.name} and I am in the {self.grade_level} grade.")
+#part-4
+    def improve_score(self,extra_points):
+        self.score = self.score + extra_points
+        print(f"{self.name}'s score has improved to {self.score}.")       
+
+#part-2 create objects
+student1 = student("Alice", "10th", 85)
+student2 = student("Bob", "12th", 92)
+
+#Print name and score
+print(f"{student1.name} has a score of {student1.score}.")
+print(f"{student2.name} has a score of {student2.score}.")
+
+#part3: Call introduce() method
+student1.introduce()
+student2.introduce()
+
+#part4: Improve score
+student1.improve_score(5)
+# Final check
+print(f"Final check - {student1.name}'s score is: {student1.score}")
